@@ -8,6 +8,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
+import java.math.BigDecimal;
+
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
@@ -34,7 +36,7 @@ class CustomerServiceTest {
         customer.setStreet("Test Street");
         customer.setCity("Test City");
         customer.setZipCode("1234");
-        customer.setTotalRevenue("1000");
+        customer.setTotalRevenue(BigDecimal.valueOf(1000;
 
         doAnswer(invocation -> {
             Object[] args = invocation.getArguments();
